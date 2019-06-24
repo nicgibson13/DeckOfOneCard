@@ -39,7 +39,6 @@
 			isa = PBXGroup;
 			children = (
 				7CA80EE122C134E8000F3938 /* DeckOfOneCard */,
-				7CA80EE022C134E8000F3938 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,11 +48,13 @@
 				7CA80EDF22C134E8000F3938 /* DeckOfOneCard.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		7CA80EE122C134E8000F3938 /* DeckOfOneCard */ = {
 			isa = PBXGroup;
 			children = (
+				7CA80EE022C134E8000F3938 /* Products */,
 				7CA80EF722C135DD000F3938 /* Resources */,
 				7CA80EFB22C13C28000F3938 /* Model */,
 				7CA80EF822C1360F000F3938 /* Storyboards */,
