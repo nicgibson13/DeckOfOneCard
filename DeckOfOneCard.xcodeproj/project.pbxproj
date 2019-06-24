@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7CA80EE322C134E8000F3938 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA80EE222C134E8000F3938 /* AppDelegate.swift */; };
-		7CA80EE522C134E8000F3938 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA80EE422C134E8000F3938 /* ViewController.swift */; };
 		7CA80EE822C134E8000F3938 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA80EE622C134E8000F3938 /* Main.storyboard */; };
-		7CA80EEB22C134E8000F3938 /* DeckOfOneCard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7CA80EE922C134E8000F3938 /* DeckOfOneCard.xcdatamodeld */; };
 		7CA80EED22C134EB000F3938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CA80EEC22C134EB000F3938 /* Assets.xcassets */; };
 		7CA80EF022C134EB000F3938 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA80EEE22C134EB000F3938 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,9 +16,7 @@
 /* Begin PBXFileReference section */
 		7CA80EDF22C134E8000F3938 /* DeckOfOneCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeckOfOneCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CA80EE222C134E8000F3938 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7CA80EE422C134E8000F3938 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7CA80EE722C134E8000F3938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7CA80EEA22C134E8000F3938 /* DeckOfOneCard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DeckOfOneCard.xcdatamodel; sourceTree = "<group>"; };
 		7CA80EEC22C134EB000F3938 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CA80EEF22C134EB000F3938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CA80EF122C134EB000F3938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,15 +52,29 @@
 		7CA80EE122C134E8000F3938 /* DeckOfOneCard */ = {
 			isa = PBXGroup;
 			children = (
+				7CA80EF722C135DD000F3938 /* Resources */,
+				7CA80EF822C1360F000F3938 /* Storyboards */,
+			);
+			path = DeckOfOneCard;
+			sourceTree = "<group>";
+		};
+		7CA80EF722C135DD000F3938 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				7CA80EE222C134E8000F3938 /* AppDelegate.swift */,
-				7CA80EE422C134E8000F3938 /* ViewController.swift */,
-				7CA80EE622C134E8000F3938 /* Main.storyboard */,
 				7CA80EEC22C134EB000F3938 /* Assets.xcassets */,
 				7CA80EEE22C134EB000F3938 /* LaunchScreen.storyboard */,
 				7CA80EF122C134EB000F3938 /* Info.plist */,
-				7CA80EE922C134E8000F3938 /* DeckOfOneCard.xcdatamodeld */,
 			);
-			path = DeckOfOneCard;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7CA80EF822C1360F000F3938 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7CA80EE622C134E8000F3938 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +148,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CA80EE522C134E8000F3938 /* ViewController.swift in Sources */,
-				7CA80EEB22C134E8000F3938 /* DeckOfOneCard.xcdatamodeld in Sources */,
 				7CA80EE322C134E8000F3938 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +296,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2HLC2FMZN4;
-				INFOPLIST_FILE = DeckOfOneCard/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DeckOfOneCard/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +314,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2HLC2FMZN4;
-				INFOPLIST_FILE = DeckOfOneCard/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DeckOfOneCard/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -340,19 +348,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		7CA80EE922C134E8000F3938 /* DeckOfOneCard.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				7CA80EEA22C134E8000F3938 /* DeckOfOneCard.xcdatamodel */,
-			);
-			currentVersion = 7CA80EEA22C134E8000F3938 /* DeckOfOneCard.xcdatamodel */;
-			path = DeckOfOneCard.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 7CA80ED722C134E8000F3938 /* Project object */;
 }
